@@ -14,6 +14,7 @@ import openai
 
 set_api_key("YOUR_API_KEY") #Your ElevenLabs API Key
 openai.api_key = "YOUR_API_KEY" #Your OpenAI API key
+VOICE_ID="VOICE_ID" #Voice of the person whom you would like to converse with
 
 messages = []
 
@@ -136,6 +137,6 @@ while input != "quit()":
     print("\n" + reply + "\n")
     audio = generate(
     text=reply,
-    voice="VOICE_ID",   #Voice of the person whom you would like to converse with
+    voice=VOICE_ID,   #Voice of the person whom you would like to converse with
     model="eleven_monolingual_v1")
     play(audio)
