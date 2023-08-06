@@ -9,7 +9,7 @@ Once the user's speech has been converted into text, the TTT step processes the 
 Finally, in the TTS step, the generated textual response is converted back into spoken language using text-to-speech synthesis. The TTS system takes the text response and produces an audio output that can be understood by the user, allowing for a natural conversation-like interaction between the user and the AI system.We are using the ElevenLabs API to generate Speech because it allows you to create different voices with accents or choose a voice from a vast Voice Library.
 
 ## Prerequisites
-* Python >= 3.8
+* Python >= 3.5
 * an OpenAI API key
 * an ElevenLabs API key
 
@@ -19,3 +19,9 @@ You may either run the following command in terminal
 `$ pip install -r requirements.txt`
 
 Or you may alternatively install all the packages in the file `requirement.txt`.
+
+## Installation
+1. Clone this repository.
+2. Go to TalkwithCeleb.Py and add your OPENAI_API key and ElevenLabs_API key.
+3. Select the appropriate Voice ID from Voice Library of ElevenLabs and replace it with the Voice ID.
+4. Run the file and start talking.
